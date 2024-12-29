@@ -1,6 +1,9 @@
-def print_hi(name):
-    print(f'Hi, {name}')
+import cv2
 
+relative_path = 'test_pics/pic0.jpg'
+img = cv2.imread(relative_path)
+cv2.imshow('image', img)
+cv2.waitKey(0)
 
-if __name__ == '__main__':
-    print_hi('Hello World!')
+cv2.destroyAllWindows()
+
